@@ -1,0 +1,33 @@
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: $primary;
+
+    .container {
+        padding: 10px 0;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 100%;
+        }
+
+        span {
+            font-family: $font-title;
+            font-size: 28px;
+            color: #8bc34a;
+        }
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+}
