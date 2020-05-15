@@ -30,19 +30,20 @@
                 Estare encantado de trabajar a tu lado, si quieres contactar conmigo enviame un mensaje.
             </div>
 
-            <form id="form-container">
+            <form id="form-contacto" target="votar">
                 <div class="form-left">
-                    <input type="text" placeholder="Nombre" id="nombre" autocomplete="off">
+                    <input type="text" placeholder="Nombre" id="nombre" autocomplete="off" name="nombre">
 
-                    <input type="text" placeholder="Celular" id="celular" autocomplete="off">
+                    <input type="text" placeholder="Celular" id="celular" autocomplete="off" name="celular">
 
-                    <input type="text" placeholder="Correo" id="correo" autocomplete="off">
+                    <input type="text" placeholder="Correo" id="correo" autocomplete="off" name="correo">
                 </div>
 
                 <div class="form-right">
-                    <textarea name="" id="mensaje"  placeholder="Mensaje"></textarea>
+                    <textarea name="mensaje" id="mensaje"  placeholder="Mensaje"></textarea>
 
-                    <input type="submit" id="enviar" value="Enviar">
+                    <!-- <input type="submit" id="enviar" value="Enviar"> -->
+                    <button id="btnEnviar" type="button">Enviar</button>
                 </div>
             </form>
         </div>
@@ -86,5 +87,9 @@
             </div>
         </div>
     </section>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="Controller/contact.js"></script>
 </body>
 </html>
